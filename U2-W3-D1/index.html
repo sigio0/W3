@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class User {
+        constructor(firstName, lastName, age, location) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.location = location;
+          this.age = age;
+        }
+        static ageControl(x, y) {
+          if (x.age > y.age) {
+            return console.log("x è piu grande di y");
+          } else {
+            console.log("y è piu grande di x");
+          }
+        }
+      }
+      const x = new User("giovanni", "fruci", "19", "sassuolo");
+      const y = new User("giorgio", "frascati", "23", "sassuolo");
+      console.log(User.ageControl(x, y));
+    </script>
+  </body>
+</html>
